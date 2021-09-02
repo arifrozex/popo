@@ -25,12 +25,12 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 📝 **Language:** [Python3](https://www.python.org)
 📚 **Library:** [Pyrogram](https://docs.pyrogram.org)
 📡 **Hosted on:** [Heroku](https://heroku.com)
-🧑🏻‍💻 **Developer:** @AbirHasan2005
-👥 **Support Group:** [Linux Repositories](https://t.me/arifrozex21)
-📢 **Updates Channel:** [Discovery Projects](https://t.me/arifrozex21)
+🧑🏻‍💻 **Developer:** @melna21
+👥 **Chanel Utama:** [Linux Repositories](https://t.me/freesini)
+📢 **Komik dewasa Channel:** [Discovery Projects](https://t.me/komikdewasa18)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @Damantha_Jasinghe
+🧑🏻‍💻 **Developer:** @melna21
 Developer is Super Noob. Just Learning from Official Docs. Please Donate the developer for Keeping the Service Alive.
 Also remember that developer will Delete Adult Contents from Database. So better don't Store Those Kind of Things.
 [Donate Now](https://www.paypal.me) (PayPal)
