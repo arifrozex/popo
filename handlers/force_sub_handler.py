@@ -24,10 +24,10 @@ async def handle_force_sub(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 JOIN KLIK SINI", url=invite_link.invite_link)
+                        InlineKeyboardButton("🤖 JOIN SINI BARU BISA BUKA ❤️", url=invite_link.invite_link)
                     ],
                     [
-                        InlineKeyboardButton("🔄 MEMUAT ULANG 🔄", callback_data="refreshmeh")
+                        InlineKeyboardButton("🔄 MENGULANG KEMBALI 🔄", callback_data="refreshmeh")
                     ]
                 ]
             ),
