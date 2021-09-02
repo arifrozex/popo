@@ -51,11 +51,11 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/arifrozex21"),
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/arifrozex21")
+                        InlineKeyboardButton("Support Group", url="https://t.me/freesini"),
+                        InlineKeyboardButton("Updates Channel", url="https://t.me/freesini")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot")
+                        InlineKeyboardButton("Tentang Bot", callback_data="aboutbot")
                     ]
                 ]
             )
@@ -71,7 +71,7 @@ async def start(bot: Client, cmd: Message):
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=Config.DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
-                f"**Here is Sharable Link of this file:** https://t.me/{Config.BOT_USERNAME}?start=ankivectorUpdates_{file_id}\n\n__To Retrive the Stored File, just open the link!__",
+                f" https://t.me/{Config.BOT_USERNAME}?start=ankivectorUpdates_{file_id}\n\n__🚫🚫__JANGAN DI SHARE INI VIP__",
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
@@ -104,7 +104,7 @@ async def main(bot: Client, message: Message):
 
         if Config.OTHER_USERS_CAN_SAVE_FILE is False:
             return
-        editable = await message.reply_text("Please wait ...")
+        editable = await message.reply_text("TUNGGU SAYANG ❤️")
 
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
@@ -114,12 +114,12 @@ async def main(bot: Client, message: Message):
                 parse_mode="Markdown", disable_web_page_preview=True)
             share_link = f"https://t.me/{Config.BOT_USERNAME}?start=ankivectorUpdates_{file_er_id}"
             await editable.edit(
-                f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
+                f"** {share_link} \n\nUNTUK MEMBUKA KLIK SAJA LINKNYA ",
                 parse_mode="Markdown",
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("Open Link", url=share_link)],
-                     [InlineKeyboardButton("Updates Channel", url="https://t.me/arifrozex21"),
-                      InlineKeyboardButton("Support Group", url="https://t.me/arifrozex21")]]
+                    [[InlineKeyboardButton("Buka Link", url=share_link)],
+                     [InlineKeyboardButton("Updates Channel", url="https://t.me/freesini"),
+                      InlineKeyboardButton("Support Group", url="https://t.me/freesini")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -312,7 +312,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="http://t.me/arifrozex21")
+                                             url="http://t.me/freesini")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -331,7 +331,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/arifrozex21")
+                                             url="https://github.com/arifrozex")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -349,8 +349,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/arifrozex21"),
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/arifrozex21")
+                        InlineKeyboardButton("Support Group", url="https://t.me/freesini"),
+                        InlineKeyboardButton("Updates Channel", url="https://t.me/freesini")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -367,7 +367,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/AnkiSupport_Official).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/freesini).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -378,10 +378,10 @@ async def button(bot: Client, cmd: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖  JOIN KLIK SINI", url=invite_link.invite_link)
+                                InlineKeyboardButton("🤖 JOIN SINI BARU BISA BUKA ❤️", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 MEMUAT ULANG 🔄", callback_data="refreshmeh")
+                                InlineKeyboardButton("🔄 MENGULANG KEMBALI 🔄", callback_data="refreshmeh")
                             ]
                         ]
                     ),
@@ -390,7 +390,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/arifrozex21).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/freesini).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -402,8 +402,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/arifrozex21"),
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/arifrozex21")
+                        InlineKeyboardButton("Channel Utama", url="https://t.me/freesini"),
+                        InlineKeyboardButton("Komik Dewasa ", url="https://t.me/Komikdewasa18")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
