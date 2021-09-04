@@ -50,9 +50,8 @@ async def start(bot: Client, cmd: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("Support Group", url="https://t.me/freesini"),
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/freesini")
+                    [                    
+                        InlineKeyboardButton("Admin", url="https://t.me/ownersri")
                     ],
                     [
                         InlineKeyboardButton("Tentang Bot", callback_data="aboutbot")
@@ -71,7 +70,7 @@ async def start(bot: Client, cmd: Message):
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=Config.DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
-                f" https://t.me/{Config.BOT_USERNAME}?start=ankivectorUpdates_{file_id}\n\n__🚫🚫__JANGAN DI SHARE INI VIP__",
+                f" https://t.me/{Config.BOT_USERNAME}?start=ankivectorUpdates_{file_id}\n\n__✅__LINK VIDEO ATAU FILE ANDA__",
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
             await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
@@ -118,8 +117,8 @@ async def main(bot: Client, message: Message):
                 parse_mode="Markdown",
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("Buka Link", url=share_link)],
-                     [InlineKeyboardButton("Updates Channel", url="https://t.me/freesini"),
-                      InlineKeyboardButton("Support Group", url="https://t.me/freesini")]]
+                     [InlineKeyboardButton("Hub admin", url="https://t.me/ownersri"),
+                      InlineKeyboardButton("Hub Developer", url="https://t.me/ownersri")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -312,11 +311,11 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="http://t.me/freesini")
+                                             url="https://github.com")
                     ],
                     [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("Kembali Keutama", callback_data="gotohome"),
+                        InlineKeyboardButton("Tentang Admin", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -331,11 +330,11 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/arifrozex")
+                                             url="https://github.com")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                        InlineKeyboardButton("Tentang Bot", callback_data="aboutbot"),
+                        InlineKeyboardButton("Kembali Keutama", callback_data="gotohome")
                     ]
                 ]
             )
@@ -349,12 +348,10 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/freesini"),
-                        InlineKeyboardButton("Updates Channel", url="https://t.me/freesini")
+                         InlineKeyboardButton("Tentang Bot", callback_data="aboutbot")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                         InlineKeyboardButton("Tentang Admin", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -390,7 +387,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/freesini).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/ownersri).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -402,12 +399,10 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Channel Utama", url="https://t.me/freesini"),
-                        InlineKeyboardButton("Komik Dewasa ", url="https://t.me/Komikdewasa18")
+                        InlineKeyboardButton("Tentang Bot", callback_data="aboutbot")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("Tentang Admin", callback_data="aboutdevs")
                     ]
                 ]
             )
